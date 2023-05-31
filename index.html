@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clima</title>
+    
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form id="cityForm">
+            <input id="cityNameInput" type="text" placeholder="Escriba su ciudad">
+            <button type="submit">Send</button>
+        </form>
+        <div class="Results">
+            <div class="temperature">
+                <span id="resultCityName" class="title"></span>
+                <span id="resultCitytemp" class="unit"></span>
+            </div>
+            <div class="temperature">
+                <img id="resultWeatherImage" src="" alt="">
+                <span id="resultWeatherDescription" class="description"></span>
+            </div>
+            <div class="messageContainer">
+                <span id="message">No hay resultados para mostrar</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/clima.js"></script>
+</body>
+</html>
